@@ -200,10 +200,7 @@ export default function App() {
             
             {/* Top Security Banner Decal (Authentic Retro bus label) */}
             <div className="w-full bg-neutral-900 border border-neutral-800 rounded px-1.5 py-1 text-center shadow-inner select-none pointer-events-none">
-              <span className="text-[9px] font-rounded-jp tracking-tight text-amber-400 block leading-tight font-bold">
-                降車用ボタン / STOP
-              </span>
-              <span className="text-[7px] text-neutral-400 font-rounded-jp block mt-0.5 uppercase tracking-wide">
+              <span className="text-[9px] text-neutral-400 font-rounded-jp block mt-0.5 uppercase tracking-wide font-bold">
                 KOMARIMASU BUTTON
               </span>
             </div>
