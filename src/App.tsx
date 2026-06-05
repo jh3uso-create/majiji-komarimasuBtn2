@@ -9,7 +9,8 @@ import {
   Share2, 
   Smartphone,
   Sparkles,
-  Lightbulb
+  Lightbulb,
+  SquareArrowUp
 } from 'lucide-react';
 
 export default function App() {
@@ -454,10 +455,11 @@ export default function App() {
               <div className="flex items-start gap-2">
                 <span className="bg-amber-500 text-neutral-950 rounded-full w-4 h-4 text-center text-[10px] font-bold shrink-0 mt-0.5 flex items-center justify-center">i</span>
                 <div>
-                  <h3 className="font-semibold text-neutral-200">iPhone / iPad (Safari)</h3>
-                  <p className="text-[11px] text-neutral-400 mt-0.5">
-                    1. 画面下部（または上部）の「共有（アクション）アイコン」 <Share2 className="inline w-3 h-3 text-sky-400" /> をタップします。<br />
-                    2. メニューから「ホーム画面に追加」をタップして完了です。
+                  <h3 className="font-semibold text-neutral-200">iPhone / iPad (Safari / Chrome など)</h3>
+                  <p className="text-[11px] text-neutral-400 mt-1 leading-relaxed">
+                    おっしゃる通りです！iPhoneのChromeなどでも同様のアイコンから追加できます。<br />
+                    1. 画面の端（Safariは下部、Chromeはアドレスバーの右側など）にある、四角形から上矢印が飛び出した<strong>「共有・アクションボタン」</strong> <SquareArrowUp className="inline w-4 h-4 text-sky-450 align-text-bottom" /> をタップします。<br />
+                    2. 表示されるメニューをスクロールし、<strong>「ホーム画面に追加」</strong>をタップして完了です。
                   </p>
                 </div>
               </div>
