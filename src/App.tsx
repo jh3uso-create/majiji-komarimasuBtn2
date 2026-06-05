@@ -13,6 +13,8 @@ import {
   SquareArrowUp
 } from 'lucide-react';
 
+const APP_VERSION = 'v1.1.0'; // 変更ごとにこのバージョン番号を更新します
+
 export default function App() {
   // Config States
   const [isPressed, setIsPressed] = useState(false);
@@ -489,6 +491,13 @@ export default function App() {
           <div className="text-[8px] text-neutral-400 font-rounded-jp text-right">
             安全運転に「こまり」宣言でご協力ください。
           </div>
+        </div>
+
+        {/* Version Display */}
+        <div className="text-center w-full mt-2 select-none">
+          <span className="text-[9px] text-neutral-600 font-mono tracking-wider">
+            {APP_VERSION}
+          </span>
         </div>
 
       </footer>
