@@ -1,10 +1,10 @@
-name: Deploy Vite App to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-
-  workflow_dispatch:
+    branches:
+      - main
+      - master # どちらのブランチ名でも動作するように両方指定
 
 permissions:
   contents: read
@@ -12,12 +12,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
-
-env:
-  # 2026年最新仕様のNode.js 24を強制適用して警告を消します
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
   deploy:
@@ -28,26 +24,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up Node.js
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24 # 👈 Node.jsのバージョンを 24 に上げました
-
+          node-version: 20
+          cache: npm
       - name: Install dependencies
-        run: npm install # 👈 npm ci から npm install に変更してエラーを回避します
-
+        run: npm ci
       - name: Build
         run: npm run build
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
