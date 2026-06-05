@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-rounded-jp: "M PLUS Rounded 1c", "Inter", sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
+}
+
+/* Custom highly responsive blinking glow for the STOP lamp */
+@keyframes bus-glow {
+  0%, 100% {
+    background-color: #ef4444; /* red-500 */
+    box-shadow: 0 0 35px #ef4444, inset 0 0 15px rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    background-color: #7f1d1d; /* red-900 */
+    box-shadow: 0 0 10px rgba(127, 29, 29, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.8);
+    color: #f87171; /* red-400 */
+    text-shadow: none;
+  }
+}
+
+.animate-bus-glowing {
+  animation: bus-glow 0.7s ease-in-out infinite;
+}
+

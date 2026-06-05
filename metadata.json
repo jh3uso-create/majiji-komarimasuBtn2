@@ -1,0 +1,6 @@
+{
+  "name": "こまりますボタン",
+  "description": "乗合バスの降車ボタンを模した、高品位な「それ、こまります、こまります」発音ボタンアプリ。iOS/Android対応、発音時の頭切れ防止機能を備えています。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
