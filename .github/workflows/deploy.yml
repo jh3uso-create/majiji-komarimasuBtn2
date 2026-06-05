@@ -15,11 +15,15 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  # 2026年最新仕様のNode.js 24を強制適用して警告を消します
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }} # 👈 ここを修正しました
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,11 +32,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: 24 # 👈 Node.jsのバージョンを 24 に上げました
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install # 👈 npm ci から npm install に変更してエラーを回避します
 
       - name: Build
         run: npm run build
