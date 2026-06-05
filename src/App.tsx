@@ -171,7 +171,7 @@ export default function App() {
             「それ、こまります！」ボタン
           </h1>
           <p className="text-[10px] text-neutral-400 mt-1 font-rounded-jp">
-            乗合バス降車ボタン風・頭切れなし超低遅延ボイスアプリ
+            乗合バス降車ボタン風・超低遅延ボイスアプリ
           </p>
         </div>
       </header>
