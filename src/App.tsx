@@ -457,9 +457,8 @@ export default function App() {
                 <div>
                   <h3 className="font-semibold text-neutral-200">iPhone / iPad (Safari / Chrome など)</h3>
                   <p className="text-[11px] text-neutral-400 mt-1 leading-relaxed">
-                    おっしゃる通りです！iPhoneのChromeなどでも同様のアイコンから追加できます。<br />
-                    1. 画面の端（Safariは下部、Chromeはアドレスバーの右側など）にある、四角形から上矢印が飛び出した<strong>「共有・アクションボタン」</strong> <SquareArrowUp className="inline w-4 h-4 text-sky-450 align-text-bottom" /> をタップします。<br />
-                    2. 表示されるメニューをスクロールし、<strong>「ホーム画面に追加」</strong>をタップして完了です。
+                    1. 画面端にある、四角と上矢印の<strong>「共有ボタン」</strong> <SquareArrowUp className="inline w-4 h-4 text-sky-450 align-text-bottom" /> をタップします（Safariは下部、Chromeはアドレスバーの右側など）。<br />
+                    2. メニューから<strong>「ホーム画面に追加」</strong>をタップします。
                   </p>
                 </div>
               </div>
