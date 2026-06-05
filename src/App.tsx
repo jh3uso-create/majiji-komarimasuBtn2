@@ -179,13 +179,7 @@ export default function App() {
       {/* Main Bus Stop Pole and Skeuomorphic Button Interface */}
       <main className="flex-1 w-full max-w-md flex flex-col items-center justify-center py-6 relative">
         
-        {/* Authentic Japanese Bus Pole Handrail */}
-        <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-7 md:w-8 bg-gradient-to-r from-neutral-400 via-neutral-100 to-neutral-400 rounded-sm shadow-xl z-0 border-x border-neutral-500/50 flex flex-col justify-between py-10 pointer-events-none">
-          {/* Pole connection clamps (Skeuomorphic metal attachments) */}
-          <div className="w-9 -ml-1 h-3 bg-neutral-600 rounded-sm border border-neutral-700 shadow shadow-black"></div>
-          <div className="w-9 -ml-1 h-3 bg-neutral-600 rounded-sm border border-neutral-700 shadow shadow-black"></div>
-          <div className="w-9 -ml-1 h-3 bg-neutral-600 rounded-sm border border-neutral-700 shadow shadow-black"></div>
-        </div>
+
 
         {/* The Skeuomorphic Bus Stop Button Block */}
         <div 
